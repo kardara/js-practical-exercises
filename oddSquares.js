@@ -1,10 +1,3 @@
-function oddSquares(arr){
-    let rslt=[]
+let oddSquares = arr => arr.filter(num=>num%2===0).map(num=>num*num)
 
-    for(var i=0;i<arr.lenght;i++){
-        if(arr[i]%2!==0){
-            rslt.push(arr[i]*arr[i])
-        }
-    }
-    return rslt
-}
+console.log(oddSquares([1,2,3,4]))
